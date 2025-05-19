@@ -1,0 +1,48 @@
+
+
+table tr td .sem{
+    border: none;
+}
+table tr td{
+    border: 1px solid #000;
+    width: 80px;
+    height: 100px;
+    padding: 4px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  
+  .numeroAtomico {
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    font-size: 10px;
+    font-weight: bold;
+ }
+  
+  .simbolo {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;   
+  }
+  
+
+  .nomeelemento {
+    display: block;
+    font-size: 10px;
+    margin-top: 2px;
+  }
+  
+
+  .massaAtomica {
+    position: absolute;
+    bottom: 4px;
+    right: 6px;
+    font-size: 9px;
+  }
+  
