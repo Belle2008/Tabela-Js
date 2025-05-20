@@ -6,8 +6,8 @@ table tr td .sem{
 table tr td{
     border: 1px solid #000;
     width: 80px;
-    height: 100px;
-    padding: 4px;
+    height: 80px;
+    padding: 0px;
     position: relative;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -28,7 +28,7 @@ table tr td{
     display: block;
     font-size: 24px;
     font-weight: bold;
-    margin-top: 20px;   
+    margin-top: 2px;   
   }
   
 
