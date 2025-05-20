@@ -6,11 +6,16 @@ for (let linhas = 1; linhas <= 7; linhas++) {
 
     // cria as colunas
     for (let colunas = 1; colunas <= 18; colunas++) {
-        tabela += `<td class="elemento">
-                 <span class="H">1</span>
-                 <span class="H">1</span>
-                 <span class="H">1</span>
-                 <span class="H">1</span>
+        tabela += `<table>
+    <tr>
+      <td>
+        <span class="numeroAtomico">1</span>
+        <span class="simbolo">H</span>
+        <span class="nomeelemento">Hidrogênio</span>
+        <span class="massaAtomica">1.008</span>
+      </td>
+    </tr>
+  </table>
               </td>`
     }
 
