@@ -1,49 +1,24 @@
-
-
-table tr td .sem{
-    border: none;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(199, 199, 199);
 }
-table tr td{
-    border: 1px solid #000;
-    width: 80px;
-    height: 100px;
-    padding: 4px;
-    position: relative;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    float: left;
-  }
-
-  
-  .numeroAtomico {
-    position: absolute;
-    top: 4px;
-    left: 6px;
-    font-size: 10px;
-    font-weight: bold;
- }
-  
-  .simbolo {
-    display: block;
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;   
-  }
-  
-
-  .nomeelemento {
-    display: block;
-    font-size: 10px;
-    margin-top: 2px;
-  }
-  
-
-  .massaAtomica {
-    position: absolute;
-    bottom: 4px;
-    right: 6px;
-    font-size: 9px;
-  }
-  
+ 
+.elemento {
+  width: 35px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 0px;
+  color: black;
+  font-size: 11,5px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #888;
+}
+ 
+.tabela-periodica {
+  gap: 10px;
+  padding: 20px;
+  margin-left: 25px;
+  display: grid;
+  grid-template-columns: repeat(20, 55px);
+}
