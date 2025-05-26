@@ -1,19 +1,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(199, 199, 199);
+  background-color: rgb(236, 229, 229);
 }
- 
-.elemento {
-  width: 35px;
-  height: 45px;
-  padding: 10px;
-  border-radius: 0px;
-  color: black;
-  font-size: 11,5px;
-  cursor: pointer;
-  text-align: center;
-  background-color: #888;
-}
+
  
 .tabela-periodica {
   gap: 10px;
@@ -21,4 +10,80 @@ body {
   margin-left: 25px;
   display: grid;
   grid-template-columns: repeat(20, 55px);
+}
+
+
+
+.numero-atomico {
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(9, 9, 9);
+}
+
+.simbolo {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: 230px;
+  background-color: rgba(255, 255, 255, 0.97);
+  color: #222;
+  padding: 10px 12px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 100;
+  top: 65px;
+  left: -85px;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  pointer-events: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.tooltip .titulo {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #0077cc;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.tooltip .info {
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+.tooltip .info span {
+  font-weight: 600;
+  color: #333;
+}
+
+
+.elemento {
+  width: 40px;
+  height: 35px;
+  padding: 7px;
+  color: black;
+  font-size: 11.5px;
+  cursor: pointer;
+  background-color: #888;
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+}
+
+.elemento:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
