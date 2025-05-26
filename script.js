@@ -1,6 +1,6 @@
 const elementos = [
     {
-      "massaAtomica": "1.00794(4)",
+      "massaAtomica": "1.008",
       "numeroAtomico": "1",
       "raioAtomico": "37",
       "pontoDeEbulicao": "20",
@@ -15,7 +15,7 @@ const elementos = [
       "raioIonico": "",
       "energiaDeIonizacao": "1312",
       "pontoDeFusao": "14",
-      "nome": "Hydrogen",
+      "nome": "Hidrogênio",
       "estadosDeOxidacao": "-1, 1",
       "estadoPadrao": "gasoso",
       "simbolo": "H",
@@ -2850,8 +2850,11 @@ const container = document.getElementById("tabela");
   <span class="numero-atomico">${el.numeroAtomico}</span>
    <div class="tooltip">
     <strong>${el.nome}</strong><br>
+    Símbolo: ${el.simbolo}
+    Número Atômico: ${el.numeroAtomico}
     Massa: ${el.massaAtomica}<br>
     Grupo: ${el.grupo}
+    Configuração eletrônica: ${el.configuracaoEletronica} 
   </div>
 `;
  
