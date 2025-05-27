@@ -2845,28 +2845,32 @@ const container = document.getElementById("tabela");
   elemento.style.gridColumnStart = el.coluna;
   elemento.style.backgroundColor = `#${el.corHexCpk}`;
  
-
   elemento.innerHTML = `
   <span class="simbolo">${el.simbolo}</span>
   <span class="numero-atomico">${el.numeroAtomico}</span>
   <div class="tooltip">
-    <div class="tooltip-titulo">${el.nome}</div>
+    <div class="tooltip-titulo" style="background-color: #${el.corHexCpk};">
+      ${el.nome}
+    </div>
     <div class="tooltip-box">
-      <div class="tooltip-info-esq">
-        <div class="simbolo-big">${el.simbolo}</div>
+      <div class="tooltip-info-esq" style="background-color: #${el.corHexCpk};">
+        <div class="simbolo-big" style="color: #fff;">${el.simbolo}</div>
         <div>${el.nome}</div>
         <div>${el.numeroAtomico}</div>
         <div>${el.massaAtomica}</div>
       </div>
       <div class="tooltip-info-dir">
-        <div><b>Símbolo:</b> ${el.simbolo}</div>
-        <div><b>Nº atômico:</b> ${el.numeroAtomico}</div>
-        <div><b>Massa:</b> ${el.massaAtomica}</div>
-        <div><b>Config. eletrônica:</b> ${el.configuracaoEletronica}</div>
+        <table>
+    <tr><td><b>Símbolo</b></td><td>${el.simbolo}</td></tr>
+    <tr><td><b>Nº atômico</b></td><td>${el.numeroAtomico}</td></tr>
+    <tr><td><b>Massa</b></td><td>${el.massaAtomica}</td></tr>
+    <tr><td><b>Config. eletrônica</b></td><td>${el.configuracaoEletronica}</td></tr>
+  </table>
       </div>
     </div>
   </div>
 `;
+
 
 elemento.title = `${el.nome} (${el.numeroAtomico}) - ${el.massaAtomica}`;
 container.appendChild(elemento);
