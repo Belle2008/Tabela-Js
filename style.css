@@ -119,3 +119,11 @@ body {
   width: 120px;
   text-align: left;
 }
+
+.tablesoma{
+  width: 200px;
+  height: 100px;
+  background-color: brown;
+  margin-top: -120px;
+  margin-left: 10px;
+}
